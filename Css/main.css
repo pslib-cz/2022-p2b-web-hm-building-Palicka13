@@ -5,9 +5,64 @@
 @media only screen and (max-width: 540) {
     body{
         max-width: 360px;
+        display: flex;
+        justify-content: center;
     }
+    .page-nav-mobile {
+        display: flex;
+        flex-direction: row;
+        width: 320px;
+        height: 53px;
+
+    }
+
 }
 
 @media only screen and (min-width: 1281px) {
+    .page-header {
+        width: 1920px;
+        height: 1080px;
+        background-image: url(../media/pageheader-1920w.jpg)
+    }
+    .page-nav-desktop{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        position: absolute;
+        width: 1510px;
+        height: 92px;
+        left: 205px;
+        top: 86px;
+        background-image: url(../media/logo.png);
+        background-repeat: no-repeat;
+        background-size: 200px 55px;
+        
 
+
+    }
+    .logo {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px;
+    }
+    .menu > li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 35px 30px ;
+        gap: 10px;
+        background-color: #EB6C27;
+
+    }
 }
