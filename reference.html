@@ -9,18 +9,28 @@
 </head>
 <body>
     <div class="page-header">
-        <nav class="page-nav">
-            <menu>
-                <a href="./index.html"><img src="./media/logo.png" alt="logo firmy"></a>
-                <ul>
-                    <li><a href="./index.html">Domů</a></li>
-                    <li><a href="./sluzby.html">Služby</a></li>
-                    <li><a href="#">Reference</a></li>
-                    <li><a href="./onas.html">O Nás</a></li>
-                    <li><a href="./kontakt.html">Kontakt</a></li>
-                </ul>
+        <nav class="navbar">
+            <a href="./index.html" class="navbar__logo"><img src="./media/logo.png" alt="logo"></a>
+            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0">menu</a></div>
+            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                <li><a href="./index.html">Domů</a></li>
+                <li><a href="./sluzby.html">Služby</a></li>
+                <li><a href="#">Reference</a></li>
+                <li><a href="./onas.html">O Nás</a></li>
+                <li><a href="./kontakt.html">Kontakt</a></li>
             </menu>
         </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
+                }
+            }
+        </script>
     </div>
     <div class="content">
         <div class="wrapper">
@@ -32,14 +42,22 @@
                     Reference jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.
                 </p>
             </div>
-            <div class="referecne-galerie">
-                <a href="./Reference/hasicarna.html"><img src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt="Hasičská zbrojnice"></a>
+            <div class="referecne__galerie">
                 <div class="text-block">
-                    <h4>Samoobslužná prádelna</h4>
-                    <p>tavební úpravy a opravy</p>
-                    <a href="./Reference/pradelny.html"><img src="./media/reference/reference-pradelna-600w.jpg" alt="Samoobslužní prádelna"/></a>
+                    <a href="./Reference/pradelny.html"><img src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt="Hasicska zbrojnice"/></a>
+                    <h2>Hasičská zbrojnice</h2>
+                    <p>celková rekonstrukce</p>
                 </div>
-                <a href="./Reference/plochy.html"><img src="./media/reference/reference-plocha-600w.jpg" alt="Komunikační plocha"></a>
+                <div class="text-block">
+                    <a href="./Reference/pradelny.html"><img src="./media/reference/reference-pradelna-600w.jpg" alt="Samoobslužní prádelna"/></a>
+                    <h2>Samoobslužná prádelna</h2>
+                    <p>stavební úpravy a opravy</p>
+                </div>
+                <div class="text-block">
+                    <a href="./Reference/plochy.html"><img src="./media/reference/reference-plocha-600w.jpg" alt="Komunikační plocha"></a>
+                    <h2>Venkovní plochy Restyl</h2>
+                    <p>provedení venkovnách ploch</p>
+                </div>
             </div>
         </div>
     </div>
