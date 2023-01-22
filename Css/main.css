@@ -200,11 +200,9 @@
         font-size: 14px;
         margin: 20px;
     }
-    .content-list > li {
-        text-decoration: none;
-    }
     .content-list > li::marker{
         color: #EB6C27;
+        
     }
     /*.content-list > .list--line::after {
         content: "";

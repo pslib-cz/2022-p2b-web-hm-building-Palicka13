@@ -9,27 +9,28 @@
 </head>
 <body>
     <div class="page-header"><nav class="navbar">
-        <a href="../index.html" class="navbar__logo"><img src="../media/logo.png" alt="logo"></a>
-        <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0">menu</a></div>
-        <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
-            <li><a href="../index.html">Domů</a></li>
-            <li><a href="../sluzby.html">Služby</a></li>
-            <li><a href="../reference.html">Reference</a></li>
-            <li><a href="../onas.html">O Nás</a></li>
-            <li><a href="../kontakt.html">Kontakt</a></li>
-        </menu>
-    </nav>
-    <script>
-        const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
-        for (const btn of hamburgerButtons) {
-            btn.onclick = (event) => {
-                const menus = document.querySelectorAll(".hamburger-menu-list");
-                for (const menu of menus) {
-                    menu.classList.toggle("navbar__menu--hidden");
+        <nav>
+           <a href="../index.html" class="navbar__logo"><img src="../media/logo.png" alt="logo"></a>
+           <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0">menu</a></div>
+           <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+               <li><a href="../index.html">Domů</a></li>
+               <li><a href="../index.html/#sluzby">Služby</a></li>
+               <li><a href="../reference.html">Reference</a></li>
+               <li><a href="../onas.html">O Nás</a></li>
+               <li><a href="../kontakt.html">Kontakt</a></li>
+           </menu>
+        </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
                 }
             }
-        }
-    </script>
+        </script>
     </div>
     <div class="content">
         <div class="wrapper">
