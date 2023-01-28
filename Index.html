@@ -8,41 +8,37 @@
     <link rel="stylesheet" href="./Css/main.css">
 </head>
 <body>
-    <div class="page-header">
+    <header class="page-header">
         <nav class="navbar">
-            <a href="#" class="navbar__logo"><img src="./media/logo.png" alt="logo"></a>
-            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0">menu</a></div>
-            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
-                <li><a href="#">Domů</a></li>
-                <li><a href="#sluzby">Služby</a></li>
-                <li><a href="./reference.html">Reference</a></li>
-                <li><a href="./onas.html">O Nás</a></li>
-                <li><a href="./kontakt.html">Kontakt</a></li>
+            <a href="#" class="navbar__logo"><img src="./media/logo.png" alt="HM Builbing cz"></a>
+            <menu class="menu hamburger-menu hamburger-menu--hidden">
+                <li class="menu-lines"><a href="#">Domů</a></li>
+                <li class="menu-lines"><a href="#sluzby">Služby</a></li>
+                <li class="menu-lines"><a href="./reference.html">Reference</a></li>
+                <li class="menu-lines"><a href="./onas.html">O Nás</a></li>
+                <li class="menu-lines"><a href="./kontakt.html">Kontakt</a></li>
             </menu>
+            <a class="hamburger" href="javascript:void(0)">menu</a>
         </nav>
         <script>
-            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            const hamburgerButtons = document.querySelectorAll(".hamburger");
             for (const btn of hamburgerButtons) {
                 btn.onclick = (event) => {
-                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    const menus = document.querySelectorAll(".hamburger-menu");
                     for (const menu of menus) {
-                        menu.classList.toggle("navbar__menu--hidden");
+                        menu.classList.toggle("hamburger-menu--hidden");
                     }
                 }
             }
         </script>
         <div class="text-block">
             <div class="title">
-                <h1 class="nazev">HM Building.cz s.r.o.</h1>
+                <h1>HM Building.cz s.r.o.</h1>
                 <p>liberecká stavební společnost</p>
             </div>
-            <div class="prymary-btn navbar-btn">
-                <a href="#sluzby" >
-                    <p>Pokračovat</p>
-                </a>
-            </div>
+            <a href="#sluzby" class="prymary-btn navbar-btn">pokračovat</a>
         </div>
-    </div>
+    </header>
     <div class="sluzby" id="sluzby">
         <div class="sluzby__header">
             <h2 class="sluzby__header--nazev"><b>Využij škálu našich <span>služeb</span></b></h2>
@@ -52,7 +48,7 @@
             </p>
         </div>
         <div class="sluzby__sluzby">
-            <div class="sluzby__sluzby--novostavby">
+            <div class="sluzby-grid sluzby__sluzby--novostavby">
                 <img src="./media/sluzba-novostavby-750w.jpg" alt="novostavby">
                 <div class="text-block">
                     <h3>Novostavby</h3>
@@ -62,14 +58,10 @@
                     <p>
                         Provádíme stavby jak průmyslového typu, tak rodinné stavby.
                     </p>
-                    <div class="outline-btn">
-                        <a href="./sluzby-novostavby.html">
-                            <p> Zobrazit více</p>
-                        </a>
-                    </div>
+                    <a href="./sluzby-novostavby.html" class="outline-btn">Zobrazit více</a>
                 </div>
             </div>
-            <div class="sluzby__sluzby--prumysl">
+            <div class="sluzby-grid sluzby__sluzby--prumysl">
                 <img src="./media/sluzba-prumyslove-stavby-750w.jpg" alt="Průmyslove stavby">
                 <div class="text-block">
                     <h3>Průmyslové stavby</h3>
@@ -77,14 +69,10 @@
                         Realizujeme <b>průmyslové objekty ocelové konstrukce</b>, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, 
                         že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na ostatních subdodávkách a tím <b>se dostáváme na přijatelné ceny</b>.
                     </p>
-                    <div class="outline-btn">
-                        <a href="./sluzby-prumysl.html">
-                            <p> Zobrazit více</p>
-                        </a>
-                    </div>
+                    <a href="./sluzby-prumysl.html" class="outline-btn">Zobrazit více</a>
                 </div>
             </div>
-            <div class="sluzby__sluzby--rekostrukce">
+            <div class="sluzby-grid sluzby__sluzby--rekostrukce">
                 <img src="./media/sluzba-rekonstrukce-750w.jpg" alt="Rekonstrukce">
                 <div class="text-block">
                     <h3>Rekonstrukce domů a jiných staveb</h3>
@@ -92,25 +80,17 @@
                         Provádíme veškeré práce spojené s <b>rekonstrukcí stávajících objektů</b>. Pro naše klienty zajišťujeme dodatečné izolování objektů, <b>zateplení objektů</b>, 
                         změnu vnitřních i vnějších dispozic stávajících objektů a demolice stávajících staveb. 
                     </p>
-                    <div class="outline-btn">
-                        <a href="./sluzby-rekonstrukce.html">
-                            <p> Zobrazit více</p>
-                        </a>
-                    </div>
+                    <a href="./sluzby-rekonstrukce.html" class="outline-btn">Zobrazit více</a>
                 </div>
             </div>
-            <div class="sluzby__sluzby--komunikace">
+            <div class="sluzby-grid sluzby__sluzby--komunikace">
                 <img src="./media/sluzba-komunikace-a-zpevnene-plochy-750w.jpg" alt="Komunikace">
                 <div class="text-block">
                     <h3>Komunikace a zpevněné plochy</h3>
                     <p>
                         Komunikace a zpevněné plochy provádíme <b>včetně zemních prací, konstrukcí podkladních</b> a souvisejících objektů, jako jsou <b>odvodnění, zpevnění svahů, opěrné zdi</b> atd.
                     </p>
-                    <div class="outline-btn">
-                        <a href="./sluzby-komunikace.html">
-                            <p> Zobrazit více</p>
-                        </a>
-                    </div>
+                    <a href="./sluzby-komunikace.html" class="outline-btn">Zobrazit více</a>
                 </div>
             </div>
         </div>
@@ -123,9 +103,7 @@
             <p>
                 Za kvalitu naší práce ručíme.
             </p>
-            <div class="prymary-btn duvera-btn">
-                <a href="./kontakt.html">Přesvědčit se</a>
-            </div>
+            <a href="./kontakt.html" class="prymary-btn duvera-btn">Přesvědčit se</a>
         </div>
     </div>
     <div class="reference">
@@ -139,27 +117,23 @@
                 </p>
             </div>
             <div class="referecne__galerie">
+                <a class="reference__galerie--obrazek" href="./Reference/hasicarna.html"><img src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt="Hasicska zbrojnice"/></a>
                 <div class="text-block">
-                    <a href="./Reference/pradelny.html"><img src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt="Hasicska zbrojnice"/></a>
                     <h2>Hasičská zbrojnice</h2>
                     <p>celková rekonstrukce</p>
                 </div>
+                <a class="reference__galerie--obrazek" href="./Reference/pradelny.html"><img src="./media/reference/reference-pradelna-600w.jpg" alt="Samoobslužní prádelna"/></a>
                 <div class="text-block">
-                    <a href="./Reference/pradelny.html"><img src="./media/reference/reference-pradelna-600w.jpg" alt="Samoobslužní prádelna"/></a>
                     <h2>Samoobslužná prádelna</h2>
                     <p>stavební úpravy a opravy</p>
                 </div>
+                <a class="reference__galerie--obrazek" href="./Reference/plochy.html"><img src="./media/reference/reference-plocha-600w.jpg" alt="Komunikační plocha"></a>
                 <div class="text-block">
-                    <a href="./Reference/plochy.html"><img src="./media/reference/reference-plocha-600w.jpg" alt="Komunikační plocha"></a>
                     <h2>Venkovní plochy Restyl</h2>
                     <p>provedení venkovnách ploch</p>
                 </div>
             </div>
-            <div class="prymary-btn">
-                <a href="./reference.html">
-                    <p>Více referencí</p>
-                </a>
-            </div>
+            <a href="./reference.html" class="prymary-btn reference-btn">Více referencí</a>
         </div>
     </div>
     <div class="konverze">
@@ -168,11 +142,7 @@
                 <h2>Plácneme si pro Váš projekt?</h2>
                 <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
             </div>
-            <div class="btn">
-                <a href="./kontakt.html">
-                    <p>Nezávazně poptat</p>
-                </a>
-            </div>
+            <a href="./kontakt.html" class="btn">Nezávazně poptat</a>
         </div>
     </div>
 </body>
