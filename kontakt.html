@@ -11,22 +11,35 @@
     <header class="page-header">
         <nav class="navbar">
             <a href="./Index.html" class="navbar__logo"><img src="./media/logo.png" alt="HM Builbing cz"></a>
-            <menu class="menu hamburger-menu-hidden">
+            <menu class="menu hamburger-menu hamburger-menu--hidden">
                 <li class="menu-lines"><a href="./Index.html">Domů</a></li>
                 <li class="menu-lines"><a href="./Index.html#sluzby">Služby</a></li>
                 <li class="menu-lines"><a href="./reference.html">Reference</a></li>
                 <li class="menu-lines"><a href="./onas.html">O Nás</a></li>
                 <li class="menu-lines"><a href="./kontakt.html">Kontakt</a></li>
             </menu>
-            <a class="hamburger-menu" href="javascript:void(0)">menu</a>
+            <a class="hamburger" href="javascript:void(0)">menu</a>
         </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger");
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    const menus = document.querySelectorAll(".hamburger-menu");
+                    for (const menu of menus) {
+                        menu.classList.toggle("hamburger-menu--hidden");
+                    }
+                }
+            }
+        </script>
     </header>
     <div class="content">
         <h2>Kontaktujte nás</h2>
         <p>Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
         <div class="content-row">
             <div class="content-item">
-                
+                <li class="telefon">+420 775 550 564</li>
+                <li class="email">stavby@hm-building.cz</li>
+                <li class="adress"><a href="https://www.google.com/maps/place/Křižanská+12,+Horní+Suchá,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m5!3m4!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.760661!4d15.0022228?hl=cs-CZ">Křižanská 12, Liberec XXII-Horní Suchá</a></li>
             </div>
             <a href="https://mapy.cz/zakladni?q=Křižanská%2012%2C%20Liberec%20XXII-Horní%20Suchá&source=addr&id=9085775&ds=1&x=15.0022034&y=50.7607286&z=17">
                 <img src="./media/mapa.jpg" alt="mapa">
@@ -38,13 +51,24 @@
             <p>Nezávazná poptávka služeb</p>
             <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
         </div>
-        <div class="formular-item">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </div>
+        <form clas="formular-item">
+            <label for="Jméno a příjmení">Jméno a příjmení</label><br>
+            <input type="text" id="Jméno a příjmení" name="Jméno a příjmení"><br>
+            <label for="E-mail">E-mail</label><br>
+            <input type="text" id="E-mail" name="E-mail"><br>
+            <label for="Telefon">Telefon</label><br>
+            <input type="number" id="Telefon" name="Telefon"><br>
+            <label for="cars">Choose a car:</label><br>
+            <select id="cars" name="cars"><br>
+              <option value="Novostavby" selected>Novostavby</option>
+              <option value="Průmyslové stavby">Průmyslové stavby</option>
+              <option value="Rekonstrukce domů a jiných staveb">Rekonstrukce domů a jiných staveb</option>
+              <option value="Komunikace a zpevněné plochy">Komunikace a zpevněné plochy</option>
+            </select><br>
+            <label for="Poznámka">Poznámka</label><br>
+            <input class="poznamka" type="text" id="Poznámka" name="Poznámka"><br>
+            <a class="prymary-btn kontakt-btn">Odeslat nezávaznou poptávku</a>
+        </form>
     </div>
 </body>
 </html>
