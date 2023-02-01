@@ -36,39 +36,40 @@
         <h2>Kontaktujte nás</h2>
         <p>Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
         <div class="content-row">
-            <div class="content-item">
-                <li class="telefon">+420 775 550 564</li>
-                <li class="email">stavby@hm-building.cz</li>
-                <li class="adress"><a href="https://www.google.com/maps/place/Křižanská+12,+Horní+Suchá,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m5!3m4!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.760661!4d15.0022228?hl=cs-CZ">Křižanská 12, Liberec XXII-Horní Suchá</a></li>
-            </div>
-            <a href="https://mapy.cz/zakladni?q=Křižanská%2012%2C%20Liberec%20XXII-Horní%20Suchá&source=addr&id=9085775&ds=1&x=15.0022034&y=50.7607286&z=17">
+            <ul class="content-item">
+                <li class="content-list"><img src="./media/icon-tel.svg">+420 775 550 564</li>
+                <li class="content-list"><img src="./media/icon-E-mail.svg">stavby@hm-building.cz</li>
+                <li class="content-list"><img src="./media/icon-adress.svg"><a href="https://www.google.com/maps/place/Křižanská+12,+Horní+Suchá,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m5!3m4!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.760661!4d15.0022228?hl=cs-CZ">Křižanská 12, Liberec XXII-Horní Suchá</a></li>
+            </ul>
+            <a class="mapa" href="https://mapy.cz/zakladni?q=Křižanská%2012%2C%20Liberec%20XXII-Horní%20Suchá&source=addr&id=9085775&ds=1&x=15.0022034&y=50.7607286&z=17">
                 <img src="./media/mapa.jpg" alt="mapa">
             </a>
         </div>
-    </div>
-    <div class="formular">
-        <div class="formular-header">
-            <p>Nezávazná poptávka služeb</p>
-            <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-        </div>
-        <form clas="formular-item">
-            <label for="Jméno a příjmení">Jméno a příjmení</label><br>
-            <input type="text" id="Jméno a příjmení" name="Jméno a příjmení"><br>
-            <label for="E-mail">E-mail</label><br>
-            <input type="text" id="E-mail" name="E-mail"><br>
-            <label for="Telefon">Telefon</label><br>
-            <input type="number" id="Telefon" name="Telefon"><br>
-            <label for="cars">Choose a car:</label><br>
-            <select id="cars" name="cars"><br>
-              <option value="Novostavby" selected>Novostavby</option>
-              <option value="Průmyslové stavby">Průmyslové stavby</option>
-              <option value="Rekonstrukce domů a jiných staveb">Rekonstrukce domů a jiných staveb</option>
-              <option value="Komunikace a zpevněné plochy">Komunikace a zpevněné plochy</option>
-            </select><br>
-            <label for="Poznámka">Poznámka</label><br>
-            <input class="poznamka" type="text" id="Poznámka" name="Poznámka"><br>
+        <div class="formular">
+            <div class="formular-header">
+                <p>Nezávazná poptávka služeb</p>
+                <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+            </div>
+            <form clas="formular-item">
+                <p>Jméno a příjmení</p>
+                <input type="text" id="Jméno a příjmení" name="Jméno a příjmení"><br>
+                <p>E-mail</p>
+                <input type="text" id="E-mail" name="E-mail"><br>
+                <p>Telefon</p>
+                <input type="number" id="Telefon" name="Telefon"><br>
+                <p>Choose a car:</p>
+                <select id="cars" name="cars"><br>
+                  <option value="Novostavby" selected>Novostavby</option>
+                  <option value="Průmyslové stavby">Průmyslové stavby</option>
+                  <option value="Rekonstrukce domů a jiných staveb">Rekonstrukce domů a jiných staveb</option>
+                  <option value="Komunikace a zpevněné plochy">Komunikace a zpevněné plochy</option>
+                </select><br>
+                <p>Poznámka</op>
+                <input class="poznamka" type="text" id="Poznámka" name="Poznámka"><br>
+            </form>
             <a class="prymary-btn kontakt-btn">Odeslat nezávaznou poptávku</a>
-        </form>
+        </div>
     </div>
+    
 </body>
 </html>
