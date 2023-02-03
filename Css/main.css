@@ -5,6 +5,7 @@
     padding: 1.5em 1.2em 2em 1.2em;
 }
 .menu {
+    margin: 20px;
     margin-top: -1px;
     color: #ffffff;
     background-color: #EB6C27;
@@ -52,7 +53,7 @@
     display: none;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1200px) {
     html {
         margin: 0px;
         padding: 0px;
@@ -102,7 +103,7 @@
         padding: 0;
         width: 100%;
     }
-    .navbar__logo > img {
+    .navbar__logo  img {
         width: 100%;
         height: 100%;
         display: block;
@@ -116,7 +117,7 @@
     .hamburger-menu--hidden {
         display: none;
     }
-    .page-header > .text-block {
+    .page-header  .text-block {
         color: #ffffff;
         background-image: url(../media/pageheader-1920w.jpg);
         background-size: cover;
@@ -148,16 +149,16 @@
         align-items: center;
         gap: 20px;
     }
-    .sluzby__sluzby--novostavby > img {
+    .sluzby__sluzby--novostavby  img {
         border-radius: 0 0 30px 0;
     }
-    .sluzby__sluzby--prumysl > img {
+    .sluzby__sluzby--prumysl  img {
         border-radius: 0 0 0 30px;
     }
-    .sluzby__sluzby--rekostrukce > img {
+    .sluzby__sluzby--rekostrukce  img {
         border-radius: 0 0 30px 0;
     }
-    .sluzby__sluzby--komunikace > img {
+    .sluzby__sluzby--komunikace  img {
         border-radius: 0 0 0 30px;
     }
     .text-block {
@@ -171,7 +172,7 @@
         margin: 0;
         width: 100%;
     }
-    .duvera > .text-block {
+    .duvera  .text-block {
         background-color: rgba(0, 0, 0, 0.582);
         font-size: 17px;
         font-weight: 700;
@@ -199,7 +200,7 @@
     .reference__header {
         font-size: 14px;
     }
-    .referecne__galerie > .text-block {
+    .referecne__galerie  .text-block {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -210,13 +211,13 @@
         background-color: #EB6C27;
         color: #ffffff;
     }
-    .wrapper > .text-block {
+    .wrapper  .text-block {
         margin: 0px;
         margin-top: 60px;
         font-size: 15px;
         text-align: center;
     }
-    .wrapper > .btn { 
+    .wrapper  .btn { 
         padding: 20px 50px;
         margin-bottom: 41px;
         background-color: #ffffff;
@@ -230,13 +231,12 @@
     }
     .content {
         font-size: 14px;
-        margin: 20px;
     }
-    .content-list > li::marker {
+    .content-list  li::marker {
         color: #EB6C27;
 
     }
-    /*.content-list > .list--line::after {
+    /*.content-list  .list--line::after {
         content: "";
         color: #EB6C27;
         border:  4px #EB6C27 solid;
@@ -244,9 +244,16 @@
         position: absolute;
         left: 45px;
     }*/
-    .content-item >li {
+    .content-item {
+        margin: 0;
+        padding: 0;
+    }
+    .content-header {
         margin: 20px;
-        color: #888888;
+    }
+    .content-item  li {
+        margin: 20px;
+        color: #EB6C27;
     }
     .content-item li {
         display: flex;
@@ -254,20 +261,31 @@
         justify-items: center;
         align-items: center;
         gap: 22px;
-        font-size: 20px;
+        font-size: 14px;
     }
     .content-list img {
         width: 30px;
         height: 30px;
     }
-    .adress a {
+    .content-list  a {
+        font-size: 14px;
+        color: #EB6C27;
         text-decoration: none;
-        color: #888888;
+    }
+    .mapa  img {
+        display: flex;
+        align-items: flex-end;
+        justify-content: end;
+        background-color:#eb6c28e6;
     }
     .formular {
         width: 320px;
         height: 872px;
         margin: 50px 20px 74px 20px;
+    }
+    
+    form  * { 
+        font-weight: 700;
     }
     .formular-header {
 
@@ -292,7 +310,7 @@
 }
 
 
-@media(min-width: 770px) {
+@media(min-width: 1201px) {
     h1 {
         font-family: 'Open Sans';
         font-style: normal;
@@ -361,17 +379,27 @@
     .page-header {
         height: 100%;
         max-height: 1080px;
-        background-image: url(../media/pageheader-1920w.jpg);
+        background-image:
+    linear-gradient(rgba(0, 0, 0, 0.582),  rgba(0, 0, 0, 0.582)),
+    url('../media/pageheader-1920w.jpg');
         background-size: cover;
         display: flex;
         flex-direction: column;
+        justify-content: end;
+        
     }
     .navbar {
+        padding: 0;
         margin: 43px 205px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         background-color: white;
+    }
+    .navbar__logo {
+        margin: 18px;
+        width: 200px;
+        height: 55px;
     }
     .hamburger-menu {
         display: none;
@@ -394,13 +422,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 16px;
     }
-    .menu-lines > a {
+    .menu a {
+        border: none;
+    }
+    .menu-lines  a {
         font-size: 16px;
         text-decoration: none;
         color: #888888;
     }
-    .menu-lines a:hover {
+    .menu-lines:hover {
         background-color: #EB6C27;
         color: #ffffff;
         font-weight: bold;
@@ -408,26 +440,42 @@
         justify-content: center;
         align-items: center;
     }
-    .page-header .text-block {
-        
-        background-color: rgba(0, 0, 0, 0.582);
+    .menu-lines:hover a {
+        color: #ffffff;
+    }
+    .active {
+        background-color: #EB6C27;
+        color: #ffffff;
+    }
+    .active a {
+        color: #ffffff;
+        font-weight: bold;
+    }
+    .page-header .text-block { 
+        margin-top: 100px;
         color: #ffffff;
         display: flex;
         flex-direction: column;
         justify-content: end;
         align-items: center;
-        gap: 60px;
     }
     .title {
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 50px;
-        line-height: 41px;
+        margin: 0;
+    }
+    .title * {
+        margin: 0;
+    }
+    .title > p {
+        font-size: 60px;
     }
     .navbar-btn {
-        margin: 90px;
+        margin: 84px;
         font-size: 20px;
+        gap: 20px;
     }
     .navbar-btn::after {
         content: url(../media/arrow_back_24px.svg);
@@ -438,6 +486,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 150px;
     }
     .sluzby__header {
         text-align: center;
@@ -448,7 +497,7 @@
         flex-direction: column;
         gap: 100px;
     }
-    .sluzby__sluzby--novostavby > img, .sluzby__sluzby--rekostrukce > img{
+    .sluzby__sluzby--novostavby   img, .sluzby__sluzby--rekostrukce  img{
         width: 100%;
         height: 100%;
         display: block;
@@ -459,7 +508,7 @@
         max-height: 307px;
 
     }
-    .sluzby__sluzby--prumysl > img, .sluzby__sluzby--komunikace > img{
+    .sluzby__sluzby--prumysl  img, .sluzby__sluzby--komunikace  img{
         width: 100%;
         height: 100%;
         display: block;
@@ -485,19 +534,23 @@
         gap: 110px;
         max-height: 307px;
     }
+    .sluzby__grid--reverse {
+        grid-row: 1;
+    }
     .duvera {
         margin: 0;
-        background-image: url(../media/background-CTAblock-1920w.jpg);
+        background-image:
+    linear-gradient(rgba(0, 0, 0, 0.582),  rgba(0, 0, 0, 0.582)),
+    url('../media/pageheader-1920w.jpg');
         background-position: center;
         background-size: cover;
     }
-    .duvera > .text-block {
+    .duvera  .text-block {
         margin: 0;
         padding: 128px 204px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        background-color: rgba(0, 0, 0, 0.582);
         color: #ffffff;
         gap: 40px;
         font-size: 30px;
@@ -525,7 +578,7 @@
         align-items: center;
         text-align: center;
     }
-    .reference__header > p {
+    .reference__header  p {
         font-size: 16px;
     }
     .referecne__galerie {
@@ -533,13 +586,23 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 80px;
     }
+    .referecne__galerie .text-block {
+        display: none;
+    }
+    .referecne__galerie--wrapper:hover .text-block {
+        display: block;
+        font-size: 25px;
+        position: absolute;
+        background-color: #eb6c28e6;
+        color: #ffffff;
+    }
     .referecne__galerie-galerie {        
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         gap: 35px;
     }
-    .item-h_16{
+    .item-h_16 {
         grid-row: 5 / span 3;
     }
     .item-h_last {
@@ -571,7 +634,7 @@
         margin: 45px;
 
     }
-    .wrapper > .text-block {
+    .wrapper .text-block {
         color: #ffffff;
         text-align: center;
     }
@@ -587,21 +650,20 @@
         padding: 20px 50px;
     }
     .content {
-        margin-left: 206px;
-        margin-bottom: 133px;
+        margin: 133px 206px ;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
     }
-    .content > h2 {
+    .content h2 {
         width: 90%;
         text-align: center;
     }
     .content-list li {
         font-size: 20px;
     }
-    .content-list > li::marker {
+    .content-list li::marker {
         color: #EB6C27;
         font-size: 40px;
     }
@@ -627,7 +689,7 @@
         gap: 22px;
         font-size: 20px;
     }
-    .content-list > a {
+    .content-list  a {
         font-size: 20px;
         color: #EB6C27;
         text-decoration: none;
@@ -636,11 +698,11 @@
         width: 60px;
         height: 60px;
     }
-    .mapa > img {
+    .mapa img {
         display: flex;
         align-items: flex-end;
         justify-content: end;
-        background-color:#eb6c28e6;
+        color:#eb6c28e6;
     }
     .formular {
         display: flex;
@@ -655,12 +717,11 @@
         align-items: flex-start;
         gap: 20px;
     }
-    form > * {
+    form  * {
         border-color: #EB6C27;
         margin: 0;
         padding: 0;
         width: 595px;
-        color: #EB6C27;
         font-size: 20px;
         display: flex;
         flex-direction: column;

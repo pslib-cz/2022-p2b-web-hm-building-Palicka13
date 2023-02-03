@@ -12,7 +12,7 @@
         <nav class="navbar">
             <a href="#" class="navbar__logo"><img src="./media/logo.png" alt="HM Builbing cz"></a>
             <menu class="menu hamburger-menu hamburger-menu--hidden">
-                <li class="menu-lines"><a href="#">Domů</a></li>
+                <li class="menu-lines active"><a href="#">Domů</a></li>
                 <li class="menu-lines"><a href="#sluzby">Služby</a></li>
                 <li class="menu-lines"><a href="./reference.html">Reference</a></li>
                 <li class="menu-lines"><a href="./onas.html">O Nás</a></li>
@@ -41,7 +41,7 @@
     </header>
     <div class="sluzby" id="sluzby">
         <div class="sluzby__header">
-            <h2 class="sluzby__header--nazev"><b>Využij škálu našich <span>služeb</span></b></h2>
+            <h2 class="sluzby__header--nazev"><b>Využijte škálu našich <span>služeb</span></b></h2>
             <p>
                 Ačkoliv provádíme především <b>průmyslové stavby</b>, není pro nás problém postavit Vám <b>rodinný domek na klíč</b>, nebo jen hrubou stavbu. 
                 Nejsou nám cizí ani <b>rekonstrukce budov</b> a jejich údržba a to včetně okolních ploch.
@@ -61,9 +61,9 @@
                     <a href="./sluzby-novostavby.html" class="outline-btn">Zobrazit více</a>
                 </div>
             </div>
-            <div class="sluzby__sluzby--prumysl">
+            <div class="sluzby__sluzby--prumysl ">
                 <img src="./media/sluzba-prumyslove-stavby-750w.jpg" alt="Průmyslove stavby">
-                <div class="text-block">
+                <div class="text-block sluzby__grid--reverse">
                     <h3>Průmyslové stavby</h3>
                     <p>
                         Realizujeme <b>průmyslové objekty ocelové konstrukce</b>, lehké ocelové (stanového typu), z prefabrikovaných dílců atd. Vzhledem k tomu, 
@@ -83,9 +83,9 @@
                     <a href="./sluzby-rekonstrukce.html" class="outline-btn">Zobrazit více</a>
                 </div>
             </div>
-            <div class="sluzby__sluzby--komunikace">
+            <div class="sluzby__sluzby--komunikace ">
                 <img src="./media/sluzba-komunikace-a-zpevnene-plochy-750w.jpg" alt="Komunikace">
-                <div class="text-block">
+                <div class="text-block sluzby__grid--reverse">
                     <h3>Komunikace a zpevněné plochy</h3>
                     <p>
                         Komunikace a zpevněné plochy provádíme <b>včetně zemních prací, konstrukcí podkladních</b> a souvisejících objektů, jako jsou <b>odvodnění, zpevnění svahů, opěrné zdi</b> atd.
@@ -115,20 +115,26 @@
                 </p>
             </div>
             <div class="referecne__galerie">
-                <a href="./Reference/hasicarna.html"><img class="reference__galerie--obrazek" src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt="Hasicska zbrojnice"/></a>
-                <div class="text-block">
-                    <h2>Hasičská zbrojnice</h2>
-                    <p>celková rekonstrukce</p>
+                <div class="referecne__galerie--wrapper">
+                    <a href="./Reference/hasicarna.html" class="reference__galerie--obrazek"><img src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt="Hasicska zbrojnice"/></a>
+                    <div class="text-block">
+                        <p>Hasičská zbrojnice</p>
+                        <p>celková rekonstrukce</p>
+                    </div>
                 </div>
-                <a href="./Reference/pradelny.html"><img class="reference__galerie--obrazek" src="./media/reference/reference-pradelna-600w.jpg" alt="Samoobslužní prádelna"/></a>
-                <div class="text-block">
-                    <h2>Samoobslužná prádelna</h2>
-                    <p>stavební úpravy a opravy</p>
+                <div class="referecne__galerie--wrapper">
+                    <a href="./Reference/pradelny.html" class="reference__galerie--obrazek"><img src="./media/reference/reference-pradelna-600w.jpg" alt="Samoobslužní prádelna"/></a>
+                    <div class="text-block">
+                        <p>Samoobslužná prádelna</p>
+                        <p>stavební úpravy a opravy</p>
+                    </div>
                 </div>
-                <a href="./Reference/plochy.html"><img class="reference__galerie--obrazek" src="./media/reference/reference-plocha-600w.jpg" alt="Komunikační plocha"></a>
-                <div class="text-block">
-                    <h2>Venkovní plochy Restyl</h2>
-                    <p>provedení venkovnách ploch</p>
+                <div class="referecne__galerie--wrapper">
+                    <a href="./Reference/plochy.html" class="reference__galerie--obrazek"><img src="./media/reference/reference-plocha-600w.jpg" alt="Komunikační plocha"></a>
+                    <div class="text-block">
+                        <p>Venkovní plochy Restyl</p>
+                        <p>provedení venkovnách ploch</p>
+                    </div>
                 </div>
             </div>
             <a href="./reference.html" class="prymary-btn reference-btn">Více referencí</a>
