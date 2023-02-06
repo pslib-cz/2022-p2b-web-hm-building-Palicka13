@@ -61,7 +61,7 @@
     img {
         width: 100%;
         height: 100%;
-        display: block;
+        display: block; 
         margin: 0;
         padding: 0;
         object-fit: cover;
@@ -702,7 +702,7 @@
         align-items: center;
         background-color: #EB6C27;
     }
-    .konverze .wrapper {
+    .konverze__wrapper {
         background-color: #EB6C27;
         display: flex;
         flex-direction: column;
@@ -711,11 +711,11 @@
         margin: 45px;
 
     }
-    .wrapper .text-block {
+    .konverze__text-block {
         color: #ffffff;
         text-align: center;
     }
-    .btn {
+    .konverze-btn {
         background-color: #ffffff;
         text-decoration: none;
         color: #EB6C27;
