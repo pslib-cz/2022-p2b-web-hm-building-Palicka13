@@ -69,10 +69,6 @@
     body {
         margin: 0px;
         padding: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     header {
         padding: 0;
@@ -130,17 +126,10 @@
         gap: 2px;
         padding-top: 100px;
         margin: 17px 34px;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
+        text-align: center;
     }
     .title > * {
         margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
     }
     .title--misto {
         font-weight: 300;
@@ -159,17 +148,15 @@
     .sluzby__header {
         margin: 20px;
     }
+    .sluzby__header--nazev {
+        font-weight: 700;
+        font-size: 22px;
+    }
     span {
         color: #EB6C27;
     }
     .sluzby__nabidky {
         margin: 20px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 20px;
-    }
-    .sluzby__nabidky {
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -196,9 +183,6 @@
         max-height: 280px;
     }
     .sluzby__text-block {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         gap: 10px;
         font-size: 14px;
     }
@@ -231,24 +215,23 @@
         padding: 12px 40px;
     }
     .reference {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin: 46px 20px;
     }
     .reference__wrapper {
+        margin: 0px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        margin: 0px;
     }
     .reference__header {
         display: flex;
         flex-direction: column;
         font-size: 14px;
         gap: 20px;
+    }
+    .reference__header--nazev {
+        font-weight: 700;
+        font-size: 22px;
     }
     .reference__header > * {
         margin: 0;
@@ -265,12 +248,13 @@
         gap: 6px;
     }
     .reference__text-block {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
         margin: 0 !important;
         gap: 10px;
+    }
+    .referecne__galerie--nazev {
+        font-weight: 700;
+        font-size: 22px;
     }
     .btn--reference {
         margin: 0;
@@ -299,13 +283,14 @@
         font-size: 15px;
         text-align: center;
     }
+    .konverze__header--nazev {
+        font-weight: 700;
+        font-size: 22px;
+    }
     .btn--konverze { 
         padding: 20px 50px;
         margin-bottom: 41px;
         background-color: #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: 15px;
         font-weight: bold;
         text-decoration: none;
@@ -354,18 +339,19 @@
         text-decoration: none;
     }
     .formular {
-        width: 320px;
-        height: 872px;
         margin: 50px 20px 74px 20px;
     }
     .formular__item {
         margin-bottom: 35px;
+        gap: 7px;
+        display: flex;
+        flex-direction: column;
     }
     .formular__item  * { 
         font-weight: 700;
     }
-    .formular__item {
-        gap: 7px;
+    .formular__item--polozka input, .formular__item--polozka select {
+        width: 100%;
     }
     .btn--kontakt {
         margin: 0;
@@ -375,14 +361,13 @@
         border-color: #EB6C27;
         margin: 0;
         padding: 0;
-        width: 319px;
         height: 45px;
     }
     .poznamka {
         height: 280px;
     }
-    .kontakt-btn {
-        margin-top: 35px;  
+    .btn--kontakt {
+        margin-top: 2.5em;  
         padding: 12px 40px;
     }
 }
@@ -666,6 +651,12 @@
     }
     .reference__text-block {
         display: none;
+    }
+    .referecne__galerie--nazev {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
     }
     .referecne__galerie--wrapper:hover .reference__text-block  {
         display: block;
