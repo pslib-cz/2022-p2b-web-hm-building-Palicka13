@@ -79,17 +79,17 @@
         margin: 0;
         width: 100%;
     }
-    .prymary-btn {
+    .btn--prymary {
         background-color: #EB6C27;
         color: #ffffff;
         padding: 12px 40px;
-        margin: 90px auto;
+        margin: 90px;
         margin-top: 0px;
         margin-bottom: 0px;
         text-decoration: none;
         font-weight: bold;
     }
-    .outline-btn {
+    .btn--outline {
         font-weight: bold;
         color: #EB6C27;
         padding: 12px 40px;
@@ -97,7 +97,7 @@
         text-decoration: none;
         font-weight: bold;
     }
-    .page-header {
+    .page__header {
         background-color: #ffffff;
         margin: 0;
         padding: 0;
@@ -117,7 +117,7 @@
     .hamburger-menu--hidden {
         display: none;
     }
-    .page-header__text-block {
+    .page__header--text-block {
         color: #ffffff;
         background-image:
     linear-gradient(rgba(0, 0, 0, 0.582),  rgba(0, 0, 0, 0.582)),
@@ -125,9 +125,6 @@
         background-size: 150%;
         background-position: center;
         padding: 0;
-    }
-    .page-header__text-block {
-        
     }
     .title {
         gap: 2px;
@@ -145,14 +142,18 @@
         justify-content: end;
         align-items: center;
     }
+    .title--misto {
+        font-weight: 300;
+        color: #ffffff;
+        font-size: 20px;
+    }
     .navbar__logo {
-        width: 127px;
         height: 44px;
     }
     .text-block > * {
         margin: 0;
     }
-    .navbar-btn {
+    .btn--navbar {
         display: none;
     }
     .sluzby__header {
@@ -161,19 +162,19 @@
     span {
         color: #EB6C27;
     }
-    .sluzby__sluzby {
+    .sluzby__nabidky {
         margin: 20px;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         gap: 20px;
     }
-    .sluzby__sluzby {
+    .sluzby__nabidky {
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
-    .sluzby__sluzby--novostavby img, .sluzby__sluzby--rekostrukce img{
+    .sluzby__nabidky--novostavby img, .sluzby__nabidky--rekostrukce img{
         width: 100%;
         height: 100%;
         display: block;
@@ -184,7 +185,7 @@
         max-height: 280px;
 
     }
-    .sluzby__sluzby--prumysl img, .sluzby__sluzby--komunikace img{
+    .sluzby__nabidky--prumysl img, .sluzby__nabidky--komunikace img{
         width: 100%;
         height: 100%;
         display: block;
@@ -225,7 +226,7 @@
     .duvera__text-block > * {
         margin: 0;
     }
-    .duvera-btn{
+    .btn--duvera {
         margin: 0px;
         padding: 12px 40px;
     }
@@ -236,7 +237,7 @@
         align-items: center;
         margin: 46px 20px;
     }
-    .wrapper {
+    .reference__wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -271,14 +272,15 @@
         margin: 0 !important;
         gap: 10px;
     }
-    .reference-btn {
-        margin-top: 44px;
+    .btn--reference {
+        margin: 0;
+        margin-top: 3.1em;
     }
-    .referecne__galerie-galerie {
-        margin-top: 38px;
+    .referecne__galerie--obrazky {
+        margin-top: 2.5em;
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 0.5em;
     }
     .konverze {
         width: 100%;
@@ -297,7 +299,7 @@
         font-size: 15px;
         text-align: center;
     }
-    .konverze-btn { 
+    .btn--konverze { 
         padding: 20px 50px;
         margin-bottom: 41px;
         background-color: #ffffff;
@@ -313,25 +315,24 @@
         margin: 20px;
         font-size: 14px;
     }
-    .content-list {
+    .content__list{
         padding-left: 20px;
     } 
-    .content-list li::marker {
+    .content__list li::marker {
         color: #EB6C27;
-
     }
-    .content-item {
+    .content__row--item {
         margin: 0;
         padding: 0;
     }
-    .content-header {
+    .content__header {
         margin: 20px;
     }
-    .content-item li {
+    .content__row--item li {
         margin: 20px;
         color: #EB6C27;
     }
-    .content-item li {
+    .content__row--item li {
         display: flex;
         flex-direction: row;
         justify-items: center;
@@ -339,15 +340,15 @@
         gap: 22px;
         font-size: 14px;
     }
-    .content-item .content-list {
+    .content__row--item .content__item--list {
         padding-left: 0;
         font-weight: bold;
     }
-    .content-list img {
+    .content__item--list img {
         width: 30px;
         height: 30px;
     }
-    .content-list  a {
+    .content__item--list  a {
         font-size: 14px;
         color: #EB6C27;
         text-decoration: none;
@@ -357,16 +358,16 @@
         height: 872px;
         margin: 50px 20px 74px 20px;
     }
-    form {
+    .formular__item {
         margin-bottom: 35px;
     }
-    form  * { 
+    .formular__item  * { 
         font-weight: 700;
     }
-    .formular-item {
+    .formular__item {
         gap: 7px;
     }
-    .kontakt-btn {
+    .btn--kontakt {
         margin: 0;
         padding: 12px 40px;
     }
@@ -399,12 +400,6 @@
         font-style: normal;
         font-weight: 700;
         font-size: 60px;
-    } 
-    h3 {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 30px;
     }
     p {
         font-family: 'Open Sans';
@@ -434,18 +429,18 @@
     { 
         color: #EB6C27;
     }
-    .prymary-btn {
+    .text-block > * {
+        margin: 0;
+    }
+    .btn--prymary {
         background-color: #EB6C27;
         color: #ffffff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding: 16px 40px;
         margin: 90px;
         text-decoration: none;
         font-weight: bold;
     }
-    .outline-btn {
+    .btn--outline {
         font-weight: bold;
         color: #EB6C27;
         font-size: 20px;
@@ -453,7 +448,7 @@
         border: 1px dashed #EB6C27;
         text-decoration: none;
     }
-    .page-header {
+    .page__header {
         height: 100%;
         max-height: 1080px;
         background-image:
@@ -478,7 +473,7 @@
         width: 200px;
         height: 55px;
     }
-    .hamburger-menu {
+    .hamburger--menu {
         display: none;
     }
     .menu::after {
@@ -528,7 +523,7 @@
         color: #ffffff;
         font-weight: bold;
     }
-    .page-header .text-block { 
+    .page__header--text-block { 
         margin-top: 100px;
         color: #ffffff;
         display: flex;
@@ -544,17 +539,17 @@
     .title * {
         margin: 0;
     }
-    .title-misto {
+    .title--misto {
         font-weight: 300;
         color: #ffffff;
         font-size: 60px;
     }
-    .navbar-btn {
+    .btn--navbar {
         margin: 84px;
         font-size: 20px;
         gap: 20px;
     }
-    .navbar-btn::after {
+    .btn--navbar::after {
         content: url(../media/arrow_back_24px.svg);
         margin-left: 20px;
     }
@@ -575,12 +570,12 @@
         font-weight: 700;
         font-size: 60px;
     }
-    .sluzby__sluzby {
+    .sluzby__nabidky {
         display: flex;
         flex-direction: column;
         gap: 100px;
     }
-    .sluzby__sluzby--novostavby   img, .sluzby__sluzby--rekostrukce  img{
+    .sluzby__nabidky--novostavby   img, .sluzby__nabidky--rekostrukce  img{
         width: 100%;
         height: 100%;
         display: block;
@@ -591,7 +586,7 @@
         max-height: 307px;
 
     }
-    .sluzby__sluzby--prumysl  img, .sluzby__sluzby--komunikace  img{
+    .sluzby__nabidky--prumysl  img, .sluzby__nabidky--komunikace  img{
         width: 100%;
         height: 100%;
         display: block;
@@ -601,7 +596,7 @@
         border-radius: 0 0 0 30px;
         max-height: 307px;
     }
-    .sluzby__sluzby--novostavby, .sluzby__sluzby--rekostrukce {
+    .sluzby__nabidky--novostavby, .sluzby__nabidky--rekostrukce {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -609,7 +604,7 @@
         gap: 100px;
         max-height: 307px;
     }
-    .sluzby__sluzby--prumysl, .sluzby__sluzby--komunikace {
+    .sluzby__nabidky--prumysl, .sluzby__nabidky--komunikace {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -638,7 +633,7 @@
         gap: 40px;
         font-size: 30px;
     }
-    .duvera-btn {
+    .btn--duvera {
         margin: 0;
         padding: 20px 80px;
         display: flex;
@@ -647,7 +642,7 @@
         align-items: center;
         gap: 20px;
     }
-    .wrapper {
+    .reference__wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -669,17 +664,22 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 80px;
     }
-    .referecne__galerie .text-block {
+    .reference__text-block {
         display: none;
     }
-    .referecne__galerie--wrapper:hover .text-block {
+    .referecne__galerie--wrapper:hover .reference__text-block  {
         display: block;
         font-size: 25px;
         position: absolute;
+        top: -280px;
         background-color: #eb6c28e6;
         color: #ffffff;
+        z-index: 1;
     }
-    .referecne__galerie-galerie {        
+    .reference__galerie--obrazek {
+        z-index: 0;
+    }
+    .referecne__galerie--obrazky {        
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
@@ -698,7 +698,9 @@
     .item-p_4 {
         grid-row: 3 ;
     }
-    .reference-btn {
+    .btn--reference {
+        margin: 0;
+        margin-top: 73px;
         font-size: 20px;
     }
     .konverze {
@@ -715,6 +717,7 @@
         justify-content: center;
         align-items: center;
         margin: 45px;
+        gap: 50px;
 
     }
     .konverze__text-block {
@@ -727,7 +730,7 @@
         font-weight: 700;
         font-size: 60px;
     }
-    .konverze-btn {
+    .btn--konverze {
         background-color: #ffffff;
         text-decoration: none;
         color: #EB6C27;
@@ -749,28 +752,28 @@
         width: 90%;
         text-align: center;
     }
-    .content-list li {
+    .content__list li {
         font-size: 20px;
     }
-    .content-list li::marker {
+    .content__list li::marker {
         color: #EB6C27;
         font-size: 40px;
     }
-    .content-row {
+    .content__row {
         padding: 0;
         margin: 0;
         display: flex;
         flex-direction: row;
         gap: 314px;
     }
-    .content-item {
+    .content__row--item {
         color: #EB6C27;
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 40px;
     }
-    .content-item li {
+    .content__item--list {
         display: flex;
         flex-direction: row;
         justify-items: center;
@@ -778,12 +781,12 @@
         gap: 22px;
         font-size: 20px;
     }
-    .content-list  a {
+    .content__item--list a {
         font-size: 20px;
         color: #EB6C27;
         text-decoration: none;
     }
-    .content-list img {
+    .content__item--list img {
         width: 60px;
         height: 60px;
     }
@@ -819,7 +822,7 @@
     .poznamka {
         height: 219px;
     }
-    .kontakt-btn {
+    .btn--kontakt {
         font-size: 16px;
         font-weight: bold;
         margin: 0;

@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="../Css/main.css">
 </head>
 <body>
-    <header class="page-header">
+    <header class="page__header">
         <nav class="navbar">
             <a href="../Index.html" class="navbar__logo"><img src="../media/logo.png" alt="HM Builbing cz"></a>
-            <menu class="menu hamburger-menu hamburger-menu--hidden">
+            <menu class="menu hamburger--menu hamburger-menu--hidden">
                 <li class="menu-lines"><a href="../Index.html">Domů</a></li>
                 <li class="menu-lines"><a href="../Index.html#sluzby">Služby</a></li>
                 <li class="menu-lines active"><a href="../reference.html">Reference</a></li>
@@ -24,7 +24,7 @@
             const hamburgerButtons = document.querySelectorAll(".hamburger");
             for (const btn of hamburgerButtons) {
                 btn.onclick = (event) => {
-                    const menus = document.querySelectorAll(".hamburger-menu");
+                    const menus = document.querySelectorAll(".hamburger--menu");
                     for (const menu of menus) {
                         menu.classList.toggle("hamburger-menu--hidden");
                     }
@@ -33,12 +33,12 @@
         </script>
     </header>
     <div class="reference">
-        <div class="wrapper">
+        <div class="reference__wrapper">
             <div class="reference__header">
                 <h2>Venkovní plochy Restyl</h2>
                 <p>Provedení venkovních ploch Restyl.</p>
             </div>
-            <div class="referecne__galerie-galerie">
+            <div class="referecne__galerie--obrazky">
                 <img src="../media/reference/plochy-restyl/reference-restyl-01.jpeg" alt="Venkovní plocha Restyl" class="item-k_1">
                 <img src="../media/reference/plochy-restyl/reference-restyl-02.jpeg" alt="Venkovní plocha Restyl" class="item-k_2">
                 <img src="../media/reference/plochy-restyl/reference-restyl-03.jpeg" alt="Venkovní plocha Restyl" class="item-k_3">
@@ -49,10 +49,10 @@
     <div class="konverze">
         <div class="konverze__wrapper">
             <div class="konverze__text-block text-block">
-                <h2>Plácneme si pro Váš projekt?</h2>
+                <p class="konverze__header--nazev">Plácneme si pro Váš projekt?</p>
                 <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
             </div>
-            <a href="../kontakt.html" class="konverze-btn">Nezávazně poptat</a>
+            <a href="../kontakt.html" class="btn--konverze">Nezávazně poptat</a>
         </div>
     </div>
 </body>

@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="./Css/main.css">
 </head>
 <body>
-    <header class="page-header">
+    <header class="page__header">
         <nav class="navbar">
             <a href="./Index.html" class="navbar__logo"><img src="./media/logo.png" alt="HM Builbing cz"></a>
-            <menu class="menu hamburger-menu hamburger-menu--hidden">
+            <menu class="menu hamburger--menu hamburger-menu--hidden">
                 <li class="menu-lines"><a href="./Index.html">Domů</a></li>
                 <li class="menu-lines active"><a href="./Index.html#sluzby">Služby</a></li>
                 <li class="menu-lines"><a href="./reference.html">Reference</a></li>
@@ -24,7 +24,7 @@
             const hamburgerButtons = document.querySelectorAll(".hamburger");
             for (const btn of hamburgerButtons) {
                 btn.onclick = (event) => {
-                    const menus = document.querySelectorAll(".hamburger-menu");
+                    const menus = document.querySelectorAll(".hamburger--menu");
                     for (const menu of menus) {
                         menu.classList.toggle("hamburger-menu--hidden");
                     }
@@ -38,7 +38,7 @@
             Komunikace a zpevněné plochy provádíme <b>včetně zemních prací, konstrukcí podkladních</b> a souvisejících objektů, jako jsou <b>odvodnění, zpevnění svahů, opěrné zdi</b> atd.
         </p>
         <p><b>Kryt komunikace</b></p>
-        <ul class="content-list">
+        <ul class="content__list">
             <li>živičné</li>
             <li>betonové</li>
             <li>dlážděné</li>
@@ -46,7 +46,7 @@
         <p>
             Při realizaci jakékoliv zpevněné plochy <b>dokážeme navrhnout celkovou skladbu konstrukce</b>, s ohledem na její způsob použití a umístění.
         </p>
-        <ul class="content-list">
+        <ul class="content__list">
             <li>zemní práce</li>
             <li>podklady pod komunikace</li>
             <li>komunikace pro pěší i pojezdové</li>
@@ -55,10 +55,10 @@
     <div class="konverze">
         <div class="konverze__wrapper">
             <div class="konverze__text-block text-block">
-                <h2>Plácneme si pro Váš projekt?</h2>
+                <p class="konverze__header--nazev">Plácneme si pro Váš projekt?</p>
                 <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
             </div>
-            <a href="./kontakt.html" class="konverze-btn">Nezávazně poptat</a>
+            <a href="./kontakt.html" class="btn--konverze">Nezávazně poptat</a>
         </div>
     </div>
 </body>
