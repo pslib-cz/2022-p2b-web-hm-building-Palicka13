@@ -430,7 +430,7 @@
         margin: 0px;
         padding: 0px;
     }
-    span 
+    .colored 
     { 
         color: #EB6C27;
     }
@@ -537,16 +537,16 @@
         align-items: center;
     }
     .title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
         font-size: 50px;
         margin: 0;
     }
     .title * {
         margin: 0;
     }
-    .title > p {
+    .title-misto {
+        font-weight: 300;
+        color: #ffffff;
         font-size: 60px;
     }
     .navbar-btn {
@@ -568,6 +568,12 @@
     .sluzby__header {
         text-align: center;
         margin: 0 310px;
+    }
+    .sluzby__header--nazev {  
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
     }
     .sluzby__sluzby {
         display: flex;
@@ -715,6 +721,12 @@
         color: #ffffff;
         text-align: center;
     }
+    .konverze__header--nazev {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+    }
     .konverze-btn {
         background-color: #ffffff;
         text-decoration: none;
@@ -788,13 +800,13 @@
         align-items: flex-start;
         gap: 35px;
     }
-    form {
+    .formular__item {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
     }
-    form  * {
+    .formular__item  * {
         border-color: #EB6C27;
         margin: 0;
         padding: 0;
