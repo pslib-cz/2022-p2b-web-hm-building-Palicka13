@@ -11,8 +11,8 @@ html {
     padding: 1.5em 1.2em 2em 1.2em;
 }
 .menu {
-    margin: 20px;
-    margin-top: -1px;
+    margin: 1.5em;
+    margin-top: -0.1px;
     color: #ffffff;
     background-color: #EB6C27;
     position: absolute;
@@ -23,7 +23,6 @@ html {
     flex-direction: column;
     list-style-type: none;
     padding: 1em;
-    gap:0.5em;
 }
 .menu a {
     text-decoration: none;
@@ -40,7 +39,7 @@ html {
     top: 0;
     width: 0;
     height: 0;
-    margin-right: calc(((46px + 28px) - 25px) / 2);
+    margin-right: calc((46px - 28px) / 2);
     transform: translateY(-100%);
     border: 12.5px solid white;
     border-bottom: #EB6C27;
@@ -73,33 +72,23 @@ html {
         margin: 0;
         padding: 0;
     }
-    header {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-    }
     .btn--prymary {
         background-color: #EB6C27;
         color: #ffffff;
-        padding: 1em 40px;
-        margin: 90px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        padding: 1em 3em;
         text-decoration: none;
         font-weight: bold;
     }
     .btn--outline {
         font-weight: bold;
         color: #EB6C27;
-        padding: 12px 40px;
+        padding: 0.86em 2.9em;
         border: 1px dashed #EB6C27;
         text-decoration: none;
         font-weight: bold;
     }
     .page__header {
         background-color: #ffffff;
-        margin: 0;
-        padding: 0;
         width: 100%;
     }
     .navbar__logo  img {
@@ -126,21 +115,24 @@ html {
         padding: 0;
     }
     .title {
+        padding-top: 10em;
+        display: flex;
+        flex-direction: column;
         gap: 2px;
-        padding-top: 100px;
-        margin: 17px 34px;
         text-align: center;
     }
     .title > * {
+        font-size: 2.2em;
         margin: 0;
     }
     .title--misto {
         font-weight: 300;
         color: #ffffff;
-        font-size: 20px;
+        font-size: 0.65em;
     }
     .navbar__logo {
-        height: 44px;
+        margin: 0.3em 0;
+        height: 3.15em;
     }
     .text-block > * {
         margin: 0;
@@ -148,21 +140,20 @@ html {
     .btn--navbar {
         display: none;
     }
-    .sluzby__header {
-        margin: 20px;
+    .sluzby {
+        margin: 4em 1.45em;
     }
     .sluzby__header--nazev {
         font-weight: 700;
-        font-size: 22px;
+        font-size: 1.57em;
     }
     span {
         color: #EB6C27;
     }
     .sluzby__nabidky {
-        margin: 20px;
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 3.4em;
     }
     .sluzby__nabidky--novostavby img, .sluzby__nabidky--rekostrukce img{
         width: 100%;
@@ -172,8 +163,7 @@ html {
         padding: 0;
         object-fit: cover;
         border-radius: 0 0 30px 0;
-        max-height: 280px;
-
+        max-height: 20em;
     }
     .sluzby__nabidky--prumysl img, .sluzby__nabidky--komunikace img{
         width: 100%;
@@ -183,13 +173,14 @@ html {
         padding: 0;
         object-fit: cover;
         border-radius: 0 0 0 30px;
-        max-height: 280px;
+        max-height: 20em;
     }
     .sluzby__text-block {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        font-size: 14px;
+        align-items: flex-start;
+        gap: 0.6em;
+        font-size: 1em;
     }
     .duvera {
         background-image:
@@ -205,25 +196,20 @@ html {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        font-size: 17px;
+        font-size: 1.2em;
         font-weight: 700;
         color: #ffffff;
-        padding: 23px 20px;
-        margin: 0px;
-        gap: 20px;
+        padding: 1.2em 1.2em;
+        gap: 1.2em;
     }
-    .duvera__text-block > * {
+    .duvera__text-block  * {
         margin: 0;
     }
     .btn--duvera {
-        margin: 0px;
-        padding: 12px 40px;
-    }
-    .reference {
-        margin: 46px 20px;
+        padding: 0.7em 2.35em;
     }
     .reference__wrapper {
-        margin: 0px;
+        margin: 3.35em 1.45em;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -231,39 +217,42 @@ html {
     .reference__header {
         display: flex;
         flex-direction: column;
-        font-size: 14px;
-        gap: 20px;
+        font-size: 1em;
+        gap: 1.4em;
     }
     .reference__header--nazev {
         font-weight: 700;
-        font-size: 22px;
+        font-size: 1.6em;
     }
     .reference__header > * {
         margin: 0;
     }
     .referecne__galerie {
-        margin-top: 48px;
+        margin-top: 3.43em;
         display: flex;
         flex-direction: column;
-        gap: 35px;
+        gap: 2.8em;
     }
     .referecne__galerie--wrapper {
         display: flex;
         flex-direction: column;
-        gap: 6px;
+        gap: 0.6em;
     }
     .reference__text-block {
         text-align: center;
-        margin: 0 !important;
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4em;
+    }
+    .reference__text-block * {
+        font-size: 0.85em;
     }
     .referecne__galerie--nazev {
         font-weight: 700;
-        font-size: 22px;
+        font-size: 1.6em;
     }
     .btn--reference {
-        margin: 0;
-        margin-top: 3.1em;
+        margin: 3.1em;
     }
     .referecne__galerie--obrazky {
         margin-top: 2.5em;
@@ -272,7 +261,6 @@ html {
         gap: 0.5em;
     }
     .konverze {
-        width: 100%;
         background-color: #EB6C27;
         color: #ffffff;
     }
@@ -280,27 +268,31 @@ html {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 26px;
+        padding: 3em 1em;
+        gap: 1.8em;
     }
     .konverze__text-block {
-        margin: 0px;
-        margin-top: 60px;
-        font-size: 15px;
+        font-size: 1.1em;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1.8em;
     }
     .konverze__header--nazev {
         font-weight: 700;
-        font-size: 22px;
+        font-size: 1.43em;
     }
     .btn--konverze { 
-        padding: 20px 50px;
+        padding: 1.3em 3.3em;
         margin-bottom: 41px;
         background-color: #ffffff;
-        font-size: 15px;
+        font-size: 1.1em;
         font-weight: bold;
         text-decoration: none;
         color: #EB6C27;
     }
+
+    /* PX */
     .content {
         margin: 20px;
         font-size: 14px;
@@ -629,7 +621,7 @@ html {
     }
     .reference__header {
         text-align: center;
-        padding: 0 16em 5em ;
+        padding: 0 14em 5em ;
     }
     .referecne__galerie--nazev {
         font-weight: 700;
